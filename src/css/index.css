@@ -47,3 +47,8 @@
 .header.sticky-action {
   @apply shadow-[0_4px_12px_rgba(0,0,0,0.1)];
 }
+
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-blue-900 text-white;
+}
