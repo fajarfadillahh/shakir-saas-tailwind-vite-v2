@@ -29,3 +29,17 @@
     @apply max-w-[1120px] w-[calc(100%-3rem)] mx-auto;
   }
 }
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-gray-100 rounded-2xl transition-all duration-300 opacity-0 scale-y-0 origin-top;
+  }
+}
+.header__link {
+  @apply text-[15px] text-gray-900 font-medium hover:text-blue-800;
+}
+/* show menu */
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
+}
