@@ -21,7 +21,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center lg:relative"
       >
         <a href="#" class="header__logo text-[18px] text-gray-900 font-bold"
           >SHAKIR.</a
@@ -31,7 +31,9 @@
           class="header__menu md:flex md:items-center md:gap-6"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-6 md:flex-row">
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row lg:absolute lg:left-[50%] lg:-translate-x-[50%] lg:gap-8"
+          >
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -78,22 +80,26 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home section">
-        <div class="home__container container grid gap-12">
-          <div class="home__data text-center justify-self-center">
+        <div
+          class="home__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
+          <div
+            class="home__data text-center justify-self-center lg:text-left lg:justify-self-start"
+          >
             <h1
-              class="home__title section-title xs:w-[400px] xs:mx-auto sm:text-[36px] sm:w-[460px]"
+              class="home__title section-title xs:w-[400px] xs:mx-auto sm:text-[36px] sm:w-[460px] lg:w-auto"
             >
               Managing business payments has never been easier
             </h1>
             <p
-              class="home__text section-text xs:w-[400px] xs:mx-auto sm:w-[460px]"
+              class="home__text section-text xs:w-[400px] xs:mx-auto sm:w-[460px] lg:w-auto"
             >
               End-to-end payments and financial management in a single solution.
               Meet the right platform to help realize. Lorem ipsum dolor sit
               amet consectetur.
             </p>
             <div
-              class="home__buttons grid gap-4 xs:grid-cols-[repeat(2,max-content)] xs:justify-center"
+              class="home__buttons grid gap-4 xs:grid-cols-[repeat(2,max-content)] xs:justify-center lg:justify-start"
             >
               <a href="#" class="home__buttons-started button">Get Started</a>
               <a
@@ -111,7 +117,7 @@
           <img
             src="./src/img/home-img.png"
             alt=""
-            class="home__img justify-self-center drop-shadow-lg sm:w-[500px]"
+            class="home__img justify-self-center drop-shadow-lg sm:w-[500px] lg:w-auto"
           />
         </div>
       </section>
